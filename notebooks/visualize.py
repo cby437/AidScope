@@ -10,8 +10,8 @@ def main():
     df = df.rename(columns={"demand point": "demand_point","j": "index","Pj": "population", "rj": "poverty_rate", 
                        "Vj": "vulnerable", "j.1": "congestion"})
     df.head()
-    df.plot
-    plt.show
+    df.plot.bar()
+    plt.show()
 
 if __name__ == "__main__":
     main()
